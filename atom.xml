@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://deleav.github.io/"/>
-  <updated>2016-04-23T15:08:46.000Z</updated>
+  <updated>2016-04-23T15:22:47.000Z</updated>
   <id>http://deleav.github.io/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://deleav.github.io/2016/03/04/%E5%B8%B8%E7%94%A8%E7%9A%84atom-package/"/>
     <id>http://deleav.github.io/2016/03/04/常用的atom-package/</id>
     <published>2016-03-03T20:54:33.000Z</published>
-    <updated>2016-04-23T15:08:46.000Z</updated>
+    <updated>2016-04-23T15:22:47.000Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;a href=&quot;https://snap-photos.s3.amazonaws.com/img-thumbs/960w/PIUOGEWN52.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;lighthouse&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src=&quot;https://snap-photos.s3.amazonaws.com/img-thumbs/960w/PIUOGEWN52.jpg&quot; alt=&quot;lighthouse&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;如何備份-atom-package-lists&quot;&gt;&lt;a href=&quot;#如何備份-atom-package-lists&quot; class=&quot;headerlink&quot; title=&quot;如何備份 atom package lists&quot;&gt;&lt;/a&gt;如何備份 atom package lists&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;backup&lt;/p&gt;
 &lt;figure class=&quot;highlight applescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apm &lt;span class=&quot;built_in&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;--installed --bare &amp;gt; packages.list&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -39,8 +39,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;https://snap-photos.s3.amazonaws.com/img-thumbs/960w/PIUOGEWN52.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;lighthouse&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;如
+      &lt;p&gt;&lt;img src=&quot;https://snap-photos.s3.amazonaws.com/img-thumbs/960w/PIUOGEWN52.jpg&quot; alt=&quot;lighthouse&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;如何備份-atom-package-lists&quot;&gt;&lt;a 
     
     </summary>
     
