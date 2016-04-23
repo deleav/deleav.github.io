@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Deleav&#39;s Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Deleav's Home">
+<meta property="og:url" content="http://deleav.github.io/index.html">
+<meta property="og:site_name" content="Deleav's Home">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Deleav's Home">
+<meta name="twitter:description">
+  
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://deleav.github.io"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer">
+      <article id="post-常用的atom-package" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/04/常用的atom-package/">atom package backup</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2016/03/04/常用的atom-package/" class="article-date">
+  <time datetime="2016-03-03T20:54:33.000Z" itemprop="datePublished">2016-03-04</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/開發環境/">開發環境</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/PIUOGEWN52.jpg" target="_blank" rel="external">lighthouse</a></p>
+<h1 id="如何備份-atom-package-lists"><a href="#如何備份-atom-package-lists" class="headerlink" title="如何備份 atom package lists"></a>如何備份 atom package lists</h1><ul>
+<li><p>backup</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm <span class="built_in">list</span> <span class="comment">--installed --bare &gt; packages.list</span></span><br></pre></td></tr></table></figure>
+<p>會在當前目錄下產生 packages.list</p>
+</li>
+<li>install all<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm <span class="keyword">install</span> <span class="string">`cat packages.list`</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="My-atom-package-list"><a href="#My-atom-package-list" class="headerlink" title="My atom package list"></a>My atom package list</h1><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">atom-beautify<span class="variable">@0</span>.<span class="number">29.6</span></span><br><span class="line">atom-jade<span class="variable">@0</span>.<span class="number">3.0</span></span><br><span class="line">autocomplete-modules<span class="variable">@1</span>.<span class="number">4.1</span></span><br><span class="line">autocomplete-paths<span class="variable">@1</span>.<span class="number">0.2</span></span><br><span class="line">emmet<span class="variable">@2</span>.<span class="number">4.3</span></span><br><span class="line">file-icons<span class="variable">@1</span>.<span class="number">7.5</span></span><br><span class="line">highlight-selected<span class="variable">@0</span>.<span class="number">11.2</span></span><br><span class="line">language-babel<span class="variable">@2</span>.<span class="number">17.3</span></span><br><span class="line">language-ejs<span class="variable">@0</span>.<span class="number">2.0</span></span><br><span class="line">markdown-preview-plus<span class="variable">@2</span>.<span class="number">4.0</span></span><br><span class="line">merge-conflicts<span class="variable">@1</span>.<span class="number">4.1</span></span><br><span class="line">pigments<span class="variable">@0</span>.<span class="number">26.0</span></span><br><span class="line">project-manager<span class="variable">@2</span>.<span class="number">9.7</span></span><br><span class="line">react<span class="variable">@0</span>.<span class="number">15.0</span></span><br></pre></td></tr></table></figure>
+<h1 id="ref"><a href="#ref" class="headerlink" title="ref."></a>ref.</h1><ul>
+<li><a href="https://discuss.atom.io/t/how-to-backup-all-your-settings/15674" target="_blank" rel="external">How to backup all your atom setting</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/atom/">atom</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/">coding</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+</article>
+
+
+    </section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Deleav Chou&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script src="/js/jquery.min.js"></script>
+
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
