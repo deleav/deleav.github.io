@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://deleav.github.io/"/>
-  <updated>2016-04-23T15:22:47.000Z</updated>
+  <updated>2016-04-23T17:58:05.000Z</updated>
   <id>http://deleav.github.io/</id>
   
   <author>
@@ -16,13 +16,53 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>atom package backup</title>
-    <link href="http://deleav.github.io/2016/03/04/%E5%B8%B8%E7%94%A8%E7%9A%84atom-package/"/>
-    <id>http://deleav.github.io/2016/03/04/常用的atom-package/</id>
-    <published>2016-03-03T20:54:33.000Z</published>
-    <updated>2016-04-23T15:22:47.000Z</updated>
+    <title>hexo 自動佈署到 github</title>
+    <link href="http://deleav.github.io/2016/03/04/hexo%20%E8%87%AA%E5%8B%95%E4%BD%88%E7%BD%B2%E5%88%B0%20github/"/>
+    <id>http://deleav.github.io/2016/03/04/hexo 自動佈署到 github/</id>
+    <published>2016-03-03T22:04:19.000Z</published>
+    <updated>2016-04-23T17:58:05.000Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;https://snap-photos.s3.amazonaws.com/img-thumbs/960w/PIUOGEWN52.jpg&quot; alt=&quot;lighthouse&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src=&quot;https://pixabay.com/static/uploads/photo/2016/03/16/11/16/background-1260304_960_720.jpg&quot; alt=&quot;Brick wall&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;如果你已經架設好-hexo-了&quot;&gt;&lt;a href=&quot;#如果你已經架設好-hexo-了&quot; class=&quot;headerlink&quot; title=&quot;如果你已經架設好 hexo 了&quot;&gt;&lt;/a&gt;如果你已經架設好 hexo 了&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;設定 &lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ssh&lt;/p&gt;
+&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;deploy:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  type:&lt;/span&gt; git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  repo:&lt;/span&gt; git@github.com:username/repo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  branch:&lt;/span&gt; gh-pages // 或 repo name 是 username.github.io 就用 master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  message:&lt;/span&gt; message // 預設是 Site updated: &amp;#123;&amp;#123; now(&lt;span class=&quot;string&quot;&gt;&#39;YYYY-MM-DD HH:mm:ss&#39;&lt;/span&gt;) &amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;請注意須要先有在 github 新增 ssh key (若無請參考 &lt;a href=&quot;https://help.github.com/articles/generating-an-ssh-key/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何在 github 上新增 ssh key&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;https&lt;/p&gt;
+&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;deploy:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  type:&lt;/span&gt; git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  repo:&lt;/span&gt; https://github.com/username/repo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  branch:&lt;/span&gt; gh-pages // 或 repo name 是 username.github.io 就用 master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  message:&lt;/span&gt; message // 預設是 Site updated: &amp;#123;&amp;#123; now(&lt;span class=&quot;string&quot;&gt;&#39;YYYY-MM-DD HH:mm:ss&#39;&lt;/span&gt;) &amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://pixabay.com/static/uploads/photo/2016/03/16/11/16/background-1260304_960_720.jpg&quot; alt=&quot;Brick wall&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="開發環境" scheme="http://deleav.github.io/categories/%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/"/>
+    
+    
+      <category term="hexo" scheme="http://deleav.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>atom package backup</title>
+    <link href="http://deleav.github.io/2016/03/04/atom%20package%20backup/"/>
+    <id>http://deleav.github.io/2016/03/04/atom package backup/</id>
+    <published>2016-03-03T20:54:33.000Z</published>
+    <updated>2016-04-23T16:47:55.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;https://pixabay.com/static/uploads/photo/2016/03/06/05/02/new-brighton-1239724_960_720.jpg&quot; alt=&quot;Crystal Ball&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;如何備份-atom-package-lists&quot;&gt;&lt;a href=&quot;#如何備份-atom-package-lists&quot; class=&quot;headerlink&quot; title=&quot;如何備份 atom package lists&quot;&gt;&lt;/a&gt;如何備份 atom package lists&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;backup&lt;/p&gt;
 &lt;figure class=&quot;highlight applescript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apm &lt;span class=&quot;built_in&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;--installed --bare &amp;gt; packages.list&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -39,8 +79,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://snap-photos.s3.amazonaws.com/img-thumbs/960w/PIUOGEWN52.jpg&quot; alt=&quot;lighthouse&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;如何備份-atom-package-lists&quot;&gt;&lt;a 
+      &lt;p&gt;&lt;img src=&quot;https://pixabay.com/static/uploads/photo/2016/03/06/05/02/new-brighton-1239724_960_720.jpg&quot; alt=&quot;Crystal Ball&quot;&gt;&lt;/p&gt;
     
     </summary>
     

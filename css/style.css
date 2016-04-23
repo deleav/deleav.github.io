@@ -489,6 +489,9 @@ a.article-title:hover,
 .article-entry video {
   max-width: 100%;
   height: auto;
+  -webkit-background-size: 50% 100%;
+  -moz-background-size: 50% 100%;
+  background-size: 50% 100%;
   display: block;
   margin: auto;
 }
