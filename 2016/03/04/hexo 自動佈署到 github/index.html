@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="Deleav's Home">
 <meta property="og:description">
 <meta property="og:image" content="https://pixabay.com/static/uploads/photo/2016/03/16/11/16/background-1260304_960_720.jpg">
-<meta property="og:updated_time" content="2016-04-23T18:11:04.000Z">
+<meta property="og:updated_time" content="2016-04-23T18:17:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 自動佈署到 github">
 <meta name="twitter:description">
@@ -89,16 +89,11 @@
 <li>install <code>hexo-deployer-git</code></li>
 <li><p>設定 <code>_config.yml</code></p>
 <ul>
-<li><p>ssh</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"><span class="attr">  repo:</span> git@github.com:username/repo</span><br><span class="line"><span class="attr">  branch:</span> branch // master or gh-pages</span><br><span class="line"><span class="attr">  message:</span> message // 預設是 Site updated: &#123;&#123; now(<span class="string">'YYYY-MM-DD HH:mm:ss'</span>) &#125;&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>請注意須要先有在 github 新增 ssh key (若無請參考 <a href="https://help.github.com/articles/generating-an-ssh-key/" target="_blank" rel="external">如何在 github 上新增 ssh key</a>)</li>
-</ul>
-</li>
-<li><p>https</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"><span class="attr">  repo:</span> https://github.com/username/repo</span><br><span class="line"><span class="attr">  branch:</span> gh-pages // 或 repo name 是 username.github.io 就用 master</span><br><span class="line"><span class="attr">  message:</span> message // 預設是 Site updated: &#123;&#123; now(<span class="string">'YYYY-MM-DD HH:mm:ss'</span>) &#125;&#125;</span><br></pre></td></tr></table></figure>
+<li>ssh<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"><span class="attr">  repo:</span> https://github.com/username/repo</span><br><span class="line"><span class="attr">  branch:</span> branch // master or gh-pages</span><br><span class="line"><span class="attr">  message:</span> message // 預設是 Site updated: &#123;&#123; now(<span class="string">'YYYY-MM-DD HH:mm:ss'</span>) &#125;&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
+</li>
+<li><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">g</span> <span class="comment">// generate</span></span><br><span class="line">hexo <span class="keyword">d</span> <span class="comment">//</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
