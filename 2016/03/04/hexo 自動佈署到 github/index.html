@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>hexo 自動佈署到 github - Deleav&#39;s Home</title>
+  <title>hexo 佈署到 github - Deleav&#39;s Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 自動佈署到 github">
+<meta property="og:title" content="hexo 佈署到 github">
 <meta property="og:url" content="http://deleav.github.io/2016/03/04/hexo 自動佈署到 github/index.html">
 <meta property="og:site_name" content="Deleav's Home">
 <meta property="og:description">
 <meta property="og:image" content="https://pixabay.com/static/uploads/photo/2016/03/16/11/16/background-1260304_960_720.jpg">
-<meta property="og:updated_time" content="2016-04-23T18:17:07.000Z">
+<meta property="og:updated_time" content="2016-04-23T18:22:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo 自動佈署到 github">
+<meta name="twitter:title" content="hexo 佈署到 github">
 <meta name="twitter:description">
 <meta name="twitter:image" content="https://pixabay.com/static/uploads/photo/2016/03/16/11/16/background-1260304_960_720.jpg">
   
@@ -64,7 +64,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      hexo 自動佈署到 github
+      hexo 佈署到 github
     </h1>
   
 
@@ -88,12 +88,10 @@
 <h1 id="如果你已經架設好-hexo-了"><a href="#如果你已經架設好-hexo-了" class="headerlink" title="如果你已經架設好 hexo 了"></a>如果你已經架設好 hexo 了</h1><ul>
 <li>install <code>hexo-deployer-git</code></li>
 <li><p>設定 <code>_config.yml</code></p>
-<ul>
-<li>ssh<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"><span class="attr">  repo:</span> https://github.com/username/repo</span><br><span class="line"><span class="attr">  branch:</span> branch // master or gh-pages</span><br><span class="line"><span class="attr">  message:</span> message // 預設是 Site updated: &#123;&#123; now(<span class="string">'YYYY-MM-DD HH:mm:ss'</span>) &#125;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"><span class="attr">  repo:</span> https://github.com/username/repo</span><br><span class="line"><span class="attr">  branch:</span> branch // master or gh-pages</span><br><span class="line"><span class="attr">  message:</span> message // 預設是 Site updated: &#123;&#123; now(<span class="string">'YYYY-MM-DD HH:mm:ss'</span>) &#125;&#125;</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-</li>
-<li><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">g</span> <span class="comment">// generate</span></span><br><span class="line">hexo <span class="keyword">d</span> <span class="comment">//</span></span><br></pre></td></tr></table></figure>
+<li><p>以下兩個都是 Deploy After Generating 的意思</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 以下二選一</span><br><span class="line">hexo g -<span class="_">-d</span></span><br><span class="line">hexo d --g</span><br><span class="line">// d(deploy), g(generate) --&gt; 簡寫(原始指令)</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
