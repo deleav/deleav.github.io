@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>atom package backup - Deleav&#39;s Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="article">
+<meta property="og:title" content="atom package backup">
+<meta property="og:url" content="http://deleav.github.io/2016/03/04/atom-package-backup/index.html">
+<meta property="og:site_name" content="Deleav's Home">
+<meta property="og:description">
+<meta property="og:image" content="https://pixabay.com/static/uploads/photo/2016/03/06/05/02/new-brighton-1239724_960_720.jpg">
+<meta property="og:updated_time" content="2016-04-24T05:56:37.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="atom package backup">
+<meta name="twitter:description">
+<meta name="twitter:image" content="https://pixabay.com/static/uploads/photo/2016/03/06/05/02/new-brighton-1239724_960_720.jpg">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://deleav.github.io"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-atom-package-backup" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      atom package backup
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2016/03/04/atom-package-backup/" class="article-date">
+  <time datetime="2016-03-03T20:54:33.000Z" itemprop="datePublished">2016-03-04</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/開發環境/">開發環境</a>
+  </div>
+
+      
+        <div class="article-comment-link-wrap">
+          <a href="http://deleav.github.io/2016/03/04/atom-package-backup/#disqus_thread" class="article-comment-link">Comments</a>
+        </div>
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://pixabay.com/static/uploads/photo/2016/03/06/05/02/new-brighton-1239724_960_720.jpg" alt="曙光"></p>
+<a id="more"></a>
+<h1 id="如何備份-atom-package-lists"><a href="#如何備份-atom-package-lists" class="headerlink" title="如何備份 atom package lists"></a>如何備份 atom package lists</h1><ul>
+<li><p>backup</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm list --installed --bare &gt; packages.list</span><br></pre></td></tr></table></figure>
+<p>會在當前目錄下產生 packages.list</p>
+</li>
+<li><p>install all</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apm install `cat packages.list`</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="My-atom-package-list"><a href="#My-atom-package-list" class="headerlink" title="My atom package list"></a>My atom package list</h1><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">atom-beautify@0.29.6</span><br><span class="line">atom-jade@0.3.0</span><br><span class="line">autocomplete-modules@1.4.1</span><br><span class="line">autocomplete-paths@1.0.2</span><br><span class="line">emmet@2.4.3</span><br><span class="line">file-icons@1.7.5</span><br><span class="line">highlight-selected@0.11.2</span><br><span class="line">language-babel@2.17.3</span><br><span class="line">language-ejs@0.2.0</span><br><span class="line">markdown-preview-plus@2.4.0</span><br><span class="line">merge-conflicts@1.4.1</span><br><span class="line">pigments@0.26.0</span><br><span class="line">project-manager@2.9.7</span><br><span class="line">react@0.15.0</span><br></pre></td></tr></table></figure>
+<h1 id="ref"><a href="#ref" class="headerlink" title="ref."></a>ref.</h1><ul>
+<li><a href="https://discuss.atom.io/t/how-to-backup-all-your-settings/15674" target="_blank" rel="external">How to backup all your atom setting</a></li>
+</ul>
+
+      
+    </div>
+    
+      <div class="article-toc">
+        <h3>Contents</h3>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#如何備份-atom-package-lists"><span class="toc-number">1.</span> <span class="toc-text">如何備份 atom package lists</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#My-atom-package-list"><span class="toc-number">2.</span> <span class="toc-text">My atom package list</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ref"><span class="toc-number">3.</span> <span class="toc-text">ref.</span></a></li></ol>
+      </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/atom/">atom</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/">coding</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/03/04/hexo-自動佈署到-github/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          hexo 佈署到 github
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Deleav Chou&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+<script>
+  var disqus_shortname = 'deleav';
+  
+  var disqus_url = 'http://deleav.github.io/2016/03/04/atom-package-backup/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>

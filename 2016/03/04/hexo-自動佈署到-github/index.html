@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>hexo 佈署到 github - Deleav&#39;s Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo 佈署到 github">
+<meta property="og:url" content="http://deleav.github.io/2016/03/04/hexo-自動佈署到-github/index.html">
+<meta property="og:site_name" content="Deleav's Home">
+<meta property="og:description">
+<meta property="og:image" content="https://pixabay.com/static/uploads/photo/2016/03/16/11/16/background-1260304_960_720.jpg">
+<meta property="og:updated_time" content="2016-04-24T05:28:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo 佈署到 github">
+<meta name="twitter:description">
+<meta name="twitter:image" content="https://pixabay.com/static/uploads/photo/2016/03/16/11/16/background-1260304_960_720.jpg">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://deleav.github.io"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-hexo-自動佈署到-github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hexo 佈署到 github
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2016/03/04/hexo-自動佈署到-github/" class="article-date">
+  <time datetime="2016-03-03T22:04:19.000Z" itemprop="datePublished">2016-03-04</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/開發環境/">開發環境</a>
+  </div>
+
+      
+        <div class="article-comment-link-wrap">
+          <a href="http://deleav.github.io/2016/03/04/hexo-自動佈署到-github/#disqus_thread" class="article-comment-link">Comments</a>
+        </div>
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://pixabay.com/static/uploads/photo/2016/03/16/11/16/background-1260304_960_720.jpg" alt="別再用頭去撞牆了"></p>
+<a id="more"></a>
+<h1 id="如果你已經架設好-hexo-了"><a href="#如果你已經架設好-hexo-了" class="headerlink" title="如果你已經架設好 hexo 了"></a>如果你已經架設好 hexo 了</h1><ul>
+<li>install <code>hexo-deployer-git</code></li>
+<li><p>設定 <code>_config.yml</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"><span class="attr">  repo:</span> https://github.com/username/repo</span><br><span class="line"><span class="attr">  branch:</span> branch // master or gh-pages</span><br><span class="line"><span class="attr">  message:</span> message // 預設是 Site updated: &#123;&#123; now(<span class="string">'YYYY-MM-DD HH:mm:ss'</span>) &#125;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>以下兩個都是先產生檔案再部署的意思</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 以下二選一</span><br><span class="line">hexo g -<span class="_">-d</span></span><br><span class="line">hexo d --g</span><br><span class="line">// d(deploy), g(generate) --&gt; 簡寫(原始指令)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="ref"><a href="#ref" class="headerlink" title="ref."></a>ref.</h1><ul>
+<li><a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Hexo Deployment</a></li>
+<li><a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Hexo Generating</a></li>
+</ul>
+
+      
+    </div>
+    
+      <div class="article-toc">
+        <h3>Contents</h3>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#如果你已經架設好-hexo-了"><span class="toc-number">1.</span> <span class="toc-text">如果你已經架設好 hexo 了</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ref"><span class="toc-number">2.</span> <span class="toc-text">ref.</span></a></li></ol>
+      </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/04/26/add-disqus-into-hexo/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          add disqus into hexo
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/03/04/atom-package-backup/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">atom package backup&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Deleav Chou&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+<script>
+  var disqus_shortname = 'deleav';
+  
+  var disqus_url = 'http://deleav.github.io/2016/03/04/hexo-自動佈署到-github/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
