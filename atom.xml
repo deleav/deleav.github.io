@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://deleav.github.io/"/>
-  <updated>2016-04-24T05:28:28.000Z</updated>
+  <updated>2016-04-26T21:42:00.000Z</updated>
   <id>http://deleav.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://deleav.github.io/2016/03/04/hexo-%E8%87%AA%E5%8B%95%E4%BD%88%E7%BD%B2%E5%88%B0-github/"/>
     <id>http://deleav.github.io/2016/03/04/hexo-自動佈署到-github/</id>
     <published>2016-03-03T22:04:19.000Z</published>
-    <updated>2016-04-24T05:28:28.000Z</updated>
+    <updated>2016-04-26T21:42:00.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;https://pixabay.com/static/uploads/photo/2016/03/16/11/16/background-1260304_960_720.jpg&quot; alt=&quot;別再用頭去撞牆了&quot;&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -30,7 +30,7 @@
 &lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;deploy:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  type:&lt;/span&gt; git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  repo:&lt;/span&gt; https://github.com/username/repo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  branch:&lt;/span&gt; branch // master or gh-pages&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  message:&lt;/span&gt; message // 預設是 Site updated: &amp;#123;&amp;#123; now(&lt;span class=&quot;string&quot;&gt;&#39;YYYY-MM-DD HH:mm:ss&#39;&lt;/span&gt;) &amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;以下兩個都是先產生檔案再部署的意思&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;// 以下二選一&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo g -&lt;span class=&quot;_&quot;&gt;-d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d --g&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// d(deploy), g(generate) --&amp;gt; 簡寫(原始指令)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;// 以下二選一&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo g &lt;span class=&quot;_&quot;&gt;-d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d -g&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// d(deploy), g(generate) --&amp;gt; 簡寫(原始指令)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;ref&quot;&gt;&lt;a href=&quot;#ref&quot; class=&quot;headerlink&quot; title=&quot;ref.&quot;&gt;&lt;/a&gt;ref.&lt;/h1&gt;&lt;ul&gt;

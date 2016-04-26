@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="Deleav's Home">
 <meta property="og:description">
 <meta property="og:image" content="https://pixabay.com/static/uploads/photo/2016/03/16/11/16/background-1260304_960_720.jpg">
-<meta property="og:updated_time" content="2016-04-24T05:28:28.000Z">
+<meta property="og:updated_time" content="2016-04-26T21:42:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 佈署到 github">
 <meta name="twitter:description">
@@ -93,7 +93,7 @@
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> git</span><br><span class="line"><span class="attr">  repo:</span> https://github.com/username/repo</span><br><span class="line"><span class="attr">  branch:</span> branch // master or gh-pages</span><br><span class="line"><span class="attr">  message:</span> message // 預設是 Site updated: &#123;&#123; now(<span class="string">'YYYY-MM-DD HH:mm:ss'</span>) &#125;&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>以下兩個都是先產生檔案再部署的意思</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 以下二選一</span><br><span class="line">hexo g -<span class="_">-d</span></span><br><span class="line">hexo d --g</span><br><span class="line">// d(deploy), g(generate) --&gt; 簡寫(原始指令)</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 以下二選一</span><br><span class="line">hexo g <span class="_">-d</span></span><br><span class="line">hexo d -g</span><br><span class="line">// d(deploy), g(generate) --&gt; 簡寫(原始指令)</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h1 id="ref"><a href="#ref" class="headerlink" title="ref."></a>ref.</h1><ul>
