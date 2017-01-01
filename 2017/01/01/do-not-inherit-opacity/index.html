@@ -3,17 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Deleav&#39;s Home</title>
+  <title>子元素如何不繼承 CSS 的 opacity 屬性 - Deleav&#39;s Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Deleav's Home">
-<meta property="og:url" content="http://deleav.github.io/index.html">
+  <meta name="description" content="事情是這樣的我想為我的小專案製作一個 Menu 選單，為了讓選單滑出來的時候其他部分是黑色半透明的，我打算放一個全畫面的 div 上去，然後上面再放上我的 Menu，所以我這麼做。123// menu page cssbackground-color: black;opacity: 0.5;
+結果連 Menu page 上面的子元素全都繼承了 opacity: 0.5;，而且在子元素加上 opa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="子元素如何不繼承 CSS 的 opacity 屬性">
+<meta property="og:url" content="http://deleav.github.io/2017/01/01/do-not-inherit-opacity/index.html">
 <meta property="og:site_name" content="Deleav's Home">
-<meta property="og:description">
+<meta property="og:description" content="事情是這樣的我想為我的小專案製作一個 Menu 選單，為了讓選單滑出來的時候其他部分是黑色半透明的，我打算放一個全畫面的 div 上去，然後上面再放上我的 Menu，所以我這麼做。123// menu page cssbackground-color: black;opacity: 0.5;
+結果連 Menu page 上面的子元素全都繼承了 opacity: 0.5;，而且在子元素加上 opa">
+<meta property="og:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/tree.jpg">
+<meta property="og:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/img1.jpg">
+<meta property="og:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/img2.jpg">
+<meta property="og:updated_time" content="2017-01-01T15:16:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Deleav's Home">
-<meta name="twitter:description">
+<meta name="twitter:title" content="子元素如何不繼承 CSS 的 opacity 屬性">
+<meta name="twitter:description" content="事情是這樣的我想為我的小專案製作一個 Menu 選單，為了讓選單滑出來的時候其他部分是黑色半透明的，我打算放一個全畫面的 div 上去，然後上面再放上我的 Menu，所以我這麼做。123// menu page cssbackground-color: black;opacity: 0.5;
+結果連 Menu page 上面的子元素全都繼承了 opacity: 0.5;，而且在子元素加上 opa">
+<meta name="twitter:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/tree.jpg">
   
   
     <link rel="icon" href="/favicon.png">
@@ -64,16 +72,15 @@ ga('send', 'pageview');
     </div>
   </div>
 </header>
-    <section id="main" class="outer">
-      <article id="post-do-not-inherit-opacity" class="article article-type-post" itemscope itemprop="blogPost">
+    <section id="main" class="outer"><article id="post-do-not-inherit-opacity" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/01/do-not-inherit-opacity/">子元素如何不繼承 CSS 的 opacity 屬性</a>
+    <h1 class="article-title" itemprop="name">
+      子元素如何不繼承 CSS 的 opacity 屬性
     </h1>
   
 
@@ -106,6 +113,11 @@ ga('send', 'pageview');
       
     </div>
     
+      <div class="article-toc">
+        <h3>目录</h3>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#事情是這樣的"><span class="toc-number">1.</span> <span class="toc-text">事情是這樣的</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#理想"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">理想</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#實際"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">實際</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解決方法"><span class="toc-number">2.</span> <span class="toc-text">解決方法</span></a></li></ol>
+      </div>
+    
     
       <footer class="article-footer">
         
@@ -115,116 +127,26 @@ ga('send', 'pageview');
     
   </div>
   
-</article>
-
-
     
-      <article id="post-hexo-自動佈署到-github" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/04/hexo-自動佈署到-github/">hexo 佈署到 github</a>
-    </h1>
   
+    <a href="/2016/03/04/hexo-自動佈署到-github/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo 佈署到 github&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-meta">
-      <a href="/2016/03/04/hexo-自動佈署到-github/" class="article-date">
-  <time datetime="2016-03-03T22:04:19.000Z" itemprop="datePublished">2016-03-04</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/開發環境/">開發環境</a>
-  </div>
-
-      
-        <div class="article-comment-link-wrap">
-          <a href="http://deleav.github.io/2016/03/04/hexo-自動佈署到-github/#disqus_thread" class="article-comment-link">Комментарии</a>
-        </div>
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/imgs/hexo-自動佈署到-github.jpg" alt="燈塔"></p>
-        
-          <p class="article-more-link">
-            <a href="/2016/03/04/hexo-自動佈署到-github/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    
-    
-      <footer class="article-footer">
-        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
-      </footer>
-    
-  </div>
   
 </article>
 
 
-    
-      <article id="post-atom-package-backup" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/04/atom-package-backup/">atom package backup</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <a href="/2016/03/04/atom-package-backup/" class="article-date">
-  <time datetime="2016-03-03T20:54:33.000Z" itemprop="datePublished">2016-03-04</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/開發環境/">開發環境</a>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-
-      
-        <div class="article-comment-link-wrap">
-          <a href="http://deleav.github.io/2016/03/04/atom-package-backup/#disqus_thread" class="article-comment-link">Комментарии</a>
-        </div>
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/imgs/atom-package-backup.jpg" alt="早晨"></p>
-        
-          <p class="article-more-link">
-            <a href="/2016/03/04/atom-package-backup/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    
-    
-      <footer class="article-footer">
-        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/atom/">atom</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/">coding</a></li></ul>
-
-      </footer>
-    
-  </div>
-  
-</article>
-
-
-    </section>
+</section>
+</section>
     <footer id="footer">
   
   <div class="outer">
@@ -238,11 +160,13 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'deleav';
   
+  var disqus_url = 'http://deleav.github.io/2017/01/01/do-not-inherit-opacity/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
