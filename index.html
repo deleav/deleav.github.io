@@ -86,23 +86,18 @@ ga('send', 'pageview');
       
       
         <div class="article-comment-link-wrap">
-          <a href="http://deleav.github.io/2017/01/01/do-not-inherit-opacity/#disqus_thread" class="article-comment-link">Комментарии</a>
+          <a href="http://deleav.github.io/2017/01/01/do-not-inherit-opacity/#disqus_thread" class="article-comment-link">Comments</a>
         </div>
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/imgs/do-not-inherit-opacity/tree.jpg" alt="樹"></p>
-<h1 id="事情是這樣的"><a href="#事情是這樣的" class="headerlink" title="事情是這樣的"></a>事情是這樣的</h1><p>我想為我的小專案製作一個 Menu 選單，為了讓選單滑出來的時候其他部分是黑色半透明的，我打算放一個全畫面的 <code>div</code> 上去，然後上面再放上我的 Menu，所以我這麼做。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// menu page css</span><br><span class="line">background-color: black;</span><br><span class="line">opacity: 0.5;</span><br></pre></td></tr></table></figure></p>
-<p>結果連 Menu page 上面的子元素全都繼承了 <code>opacity: 0.5;</code>，而且在子元素加上 <code>opacity: 1;</code> 也完全沒有用，只能在父元素的透明度基礎上更淡。</p>
-<ul>
-<li><h4 id="理想"><a href="#理想" class="headerlink" title="理想"></a>理想</h4><img src="/imgs/do-not-inherit-opacity/img1.jpg" alt="理想"></li>
-<li><h4 id="實際"><a href="#實際" class="headerlink" title="實際"></a>實際</h4>左邊的 <code>item1</code> 跟底色都變淡了，連陰影效果都跟著掛了。<br><img src="/imgs/do-not-inherit-opacity/img2.jpg" alt="實際"></li>
-</ul>
-<h1 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h1><p>其實很簡單，只要改用這種方式來避免更改到 <code>opacity</code> 屬性，就不會有改不掉的問題。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">background-color: rgb(0, 0, 0, 0.5);</span><br><span class="line">// rgb() 前三個值為 R G B，第四個為透明度</span><br></pre></td></tr></table></figure>
-<p>可惜我還是沒找到能夠複寫父元素的 <code>opacity</code> 的方法，等找到了再來更新。</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2017/01/01/do-not-inherit-opacity/#more">Read More</a>
+          </p>
+        
       
     </div>
     
@@ -144,7 +139,7 @@ ga('send', 'pageview');
 
       
         <div class="article-comment-link-wrap">
-          <a href="http://deleav.github.io/2016/03/04/hexo-自動佈署到-github/#disqus_thread" class="article-comment-link">Комментарии</a>
+          <a href="http://deleav.github.io/2016/03/04/hexo-自動佈署到-github/#disqus_thread" class="article-comment-link">Comments</a>
         </div>
       
     </div>
@@ -197,7 +192,7 @@ ga('send', 'pageview');
 
       
         <div class="article-comment-link-wrap">
-          <a href="http://deleav.github.io/2016/03/04/atom-package-backup/#disqus_thread" class="article-comment-link">Комментарии</a>
+          <a href="http://deleav.github.io/2016/03/04/atom-package-backup/#disqus_thread" class="article-comment-link">Comments</a>
         </div>
       
     </div>

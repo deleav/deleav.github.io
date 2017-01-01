@@ -5,22 +5,19 @@
   
   <title>子元素如何不繼承 CSS 的 opacity 屬性 - Deleav&#39;s Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="事情是這樣的我想為我的小專案製作一個 Menu 選單，為了讓選單滑出來的時候其他部分是黑色半透明的，我打算放一個全畫面的 div 上去，然後上面再放上我的 Menu，所以我這麼做。123// menu page cssbackground-color: black;opacity: 0.5;
-結果連 Menu page 上面的子元素全都繼承了 opacity: 0.5;，而且在子元素加上 opa">
+  <meta name="description">
 <meta property="og:type" content="article">
 <meta property="og:title" content="子元素如何不繼承 CSS 的 opacity 屬性">
 <meta property="og:url" content="http://deleav.github.io/2017/01/01/do-not-inherit-opacity/index.html">
 <meta property="og:site_name" content="Deleav's Home">
-<meta property="og:description" content="事情是這樣的我想為我的小專案製作一個 Menu 選單，為了讓選單滑出來的時候其他部分是黑色半透明的，我打算放一個全畫面的 div 上去，然後上面再放上我的 Menu，所以我這麼做。123// menu page cssbackground-color: black;opacity: 0.5;
-結果連 Menu page 上面的子元素全都繼承了 opacity: 0.5;，而且在子元素加上 opa">
+<meta property="og:description">
 <meta property="og:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/tree.jpg">
 <meta property="og:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/img1.jpg">
 <meta property="og:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/img2.jpg">
-<meta property="og:updated_time" content="2017-01-01T15:16:07.000Z">
+<meta property="og:updated_time" content="2017-01-01T15:18:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="子元素如何不繼承 CSS 的 opacity 屬性">
-<meta name="twitter:description" content="事情是這樣的我想為我的小專案製作一個 Menu 選單，為了讓選單滑出來的時候其他部分是黑色半透明的，我打算放一個全畫面的 div 上去，然後上面再放上我的 Menu，所以我這麼做。123// menu page cssbackground-color: black;opacity: 0.5;
-結果連 Menu page 上面的子元素全都繼承了 opacity: 0.5;，而且在子元素加上 opa">
+<meta name="twitter:description">
 <meta name="twitter:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/tree.jpg">
   
   
@@ -93,13 +90,14 @@ ga('send', 'pageview');
       
       
         <div class="article-comment-link-wrap">
-          <a href="http://deleav.github.io/2017/01/01/do-not-inherit-opacity/#disqus_thread" class="article-comment-link">Комментарии</a>
+          <a href="http://deleav.github.io/2017/01/01/do-not-inherit-opacity/#disqus_thread" class="article-comment-link">Comments</a>
         </div>
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/imgs/do-not-inherit-opacity/tree.jpg" alt="樹"></p>
+<a id="more"></a>
 <h1 id="事情是這樣的"><a href="#事情是這樣的" class="headerlink" title="事情是這樣的"></a>事情是這樣的</h1><p>我想為我的小專案製作一個 Menu 選單，為了讓選單滑出來的時候其他部分是黑色半透明的，我打算放一個全畫面的 <code>div</code> 上去，然後上面再放上我的 Menu，所以我這麼做。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// menu page css</span><br><span class="line">background-color: black;</span><br><span class="line">opacity: 0.5;</span><br></pre></td></tr></table></figure></p>
 <p>結果連 Menu page 上面的子元素全都繼承了 <code>opacity: 0.5;</code>，而且在子元素加上 <code>opacity: 1;</code> 也完全沒有用，只能在父元素的透明度基礎上更淡。</p>
 <ul>
@@ -114,7 +112,7 @@ ga('send', 'pageview');
     </div>
     
       <div class="article-toc">
-        <h3>目录</h3>
+        <h3>Contents</h3>
         <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#事情是這樣的"><span class="toc-number">1.</span> <span class="toc-text">事情是這樣的</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#理想"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">理想</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#實際"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">實際</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解決方法"><span class="toc-number">2.</span> <span class="toc-text">解決方法</span></a></li></ol>
       </div>
     

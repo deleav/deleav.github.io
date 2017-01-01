@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://deleav.github.io/"/>
-  <updated>2017-01-01T15:16:07.000Z</updated>
+  <updated>2017-01-01T15:18:09.000Z</updated>
   <id>http://deleav.github.io/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://deleav.github.io/2017/01/01/do-not-inherit-opacity/"/>
     <id>http://deleav.github.io/2017/01/01/do-not-inherit-opacity/</id>
     <published>2017-01-01T14:35:08.000Z</published>
-    <updated>2017-01-01T15:16:07.000Z</updated>
+    <updated>2017-01-01T15:18:09.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/imgs/do-not-inherit-opacity/tree.jpg&quot; alt=&quot;樹&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;事情是這樣的&quot;&gt;&lt;a href=&quot;#事情是這樣的&quot; class=&quot;headerlink&quot; title=&quot;事情是這樣的&quot;&gt;&lt;/a&gt;事情是這樣的&lt;/h1&gt;&lt;p&gt;我想為我的小專案製作一個 Menu 選單，為了讓選單滑出來的時候其他部分是黑色半透明的，我打算放一個全畫面的 &lt;code&gt;div&lt;/code&gt; 上去，然後上面再放上我的 Menu，所以我這麼做。&lt;br&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;// menu page css&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;background-color: black;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;opacity: 0.5;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;結果連 Menu page 上面的子元素全都繼承了 &lt;code&gt;opacity: 0.5;&lt;/code&gt;，而且在子元素加上 &lt;code&gt;opacity: 1;&lt;/code&gt; 也完全沒有用，只能在父元素的透明度基礎上更淡。&lt;/p&gt;
 &lt;ul&gt;
@@ -37,7 +38,6 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;/imgs/do-not-inherit-opacity/tree.jpg&quot; alt=&quot;樹&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;事情是這樣的&quot;&gt;&lt;a href=&quot;#事情是這樣的&quot; class=&quot;headerlink&quot; title=&quot;事情是這樣的&quot;&gt;&lt;/a&gt;事情是
     
     </summary>
     
