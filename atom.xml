@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://deleav.github.io/"/>
-  <updated>2017-01-02T13:32:21.000Z</updated>
+  <updated>2017-01-02T17:34:46.000Z</updated>
   <id>http://deleav.github.io/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在 Hexo 使用 Disqus 評論功能</title>
+    <link href="http://deleav.github.io/2017/01/02/add-disqus-into-hexo/"/>
+    <id>http://deleav.github.io/2017/01/02/add-disqus-into-hexo/</id>
+    <published>2017-01-02T11:30:36.000Z</published>
+    <updated>2017-01-02T17:34:46.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/imgs/add-disqus-into-hexo/kitchen.jpg&quot; alt=&quot;廚房&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;申請帳號&quot;&gt;&lt;a href=&quot;#申請帳號&quot; class=&quot;headerlink&quot; title=&quot;申請帳號&quot;&gt;&lt;/a&gt;申請帳號&lt;/h1&gt;&lt;p&gt;首先，你需要先到 &lt;a href=&quot;https://disqus.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Disqus&lt;/a&gt; 申請一個帳號。&lt;/p&gt;
+&lt;h1 id=&quot;新增-Site&quot;&gt;&lt;a href=&quot;#新增-Site&quot; class=&quot;headerlink&quot; title=&quot;新增 Site&quot;&gt;&lt;/a&gt;新增 Site&lt;/h1&gt;&lt;p&gt;登入後在首頁右上角點 Admin，然後在左上角選擇 Your Site 點 New&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/imgs/add-disqus-into-hexo/img1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;然後在這邊打上你想要的 shortname，然後選個 Category&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/imgs/add-disqus-into-hexo/img2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;接下來的都不管他，一直下一步到結束，然後選上面的 setting&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/imgs/add-disqus-into-hexo/img3.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;可以看到這裡有寫&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your website shortname is testeeee-1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;把他加在你 hexo 的 &lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Disqus&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;disqus_shortname:&lt;/span&gt; testeeee&lt;span class=&quot;bullet&quot;&gt;-1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;就能開始使用 disqus 提供的評論功能了，這邊是因為有跟別人重複到 shortname，所以他強制加了 &lt;code&gt;-1&lt;/code&gt;，如果沒有重複到的話就會是你原本設定的那個 shortname 了。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/imgs/add-disqus-into-hexo/kitchen.jpg&quot; alt=&quot;廚房&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://deleav.github.io/tags/hexo/"/>
+    
+      <category term="disqus" scheme="http://deleav.github.io/tags/disqus/"/>
+    
+  </entry>
   
   <entry>
     <title>子元素如何不繼承 CSS 的 opacity 屬性</title>

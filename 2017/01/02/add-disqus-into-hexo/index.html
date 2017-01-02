@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>在 Hexo 使用 Disqus 評論功能 - Deleav&#39;s Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在 Hexo 使用 Disqus 評論功能">
+<meta property="og:url" content="http://deleav.github.io/2017/01/02/add-disqus-into-hexo/index.html">
+<meta property="og:site_name" content="Deleav's Home">
+<meta property="og:description">
+<meta property="og:image" content="http://deleav.github.io/imgs/add-disqus-into-hexo/kitchen.jpg">
+<meta property="og:image" content="http://deleav.github.io/imgs/add-disqus-into-hexo/img1.jpg">
+<meta property="og:image" content="http://deleav.github.io/imgs/add-disqus-into-hexo/img2.jpg">
+<meta property="og:image" content="http://deleav.github.io/imgs/add-disqus-into-hexo/img3.jpg">
+<meta property="og:updated_time" content="2017-01-02T17:34:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="在 Hexo 使用 Disqus 評論功能">
+<meta name="twitter:description">
+<meta name="twitter:image" content="http://deleav.github.io/imgs/add-disqus-into-hexo/kitchen.jpg">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-76994710-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://deleav.github.io"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-add-disqus-into-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      在 Hexo 使用 Disqus 評論功能
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2017/01/02/add-disqus-into-hexo/" class="article-date">
+  <time datetime="2017-01-02T11:30:36.000Z" itemprop="datePublished">2017-01-02</time>
+</a>
+      
+      
+        <div class="article-comment-link-wrap">
+          <a href="http://deleav.github.io/2017/01/02/add-disqus-into-hexo/#disqus_thread" class="article-comment-link">Comments</a>
+        </div>
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/imgs/add-disqus-into-hexo/kitchen.jpg" alt="廚房"></p>
+<a id="more"></a>
+<h1 id="申請帳號"><a href="#申請帳號" class="headerlink" title="申請帳號"></a>申請帳號</h1><p>首先，你需要先到 <a href="https://disqus.com/" target="_blank" rel="external">Disqus</a> 申請一個帳號。</p>
+<h1 id="新增-Site"><a href="#新增-Site" class="headerlink" title="新增 Site"></a>新增 Site</h1><p>登入後在首頁右上角點 Admin，然後在左上角選擇 Your Site 點 New</p>
+<p><img src="/imgs/add-disqus-into-hexo/img1.jpg" alt=""><br>然後在這邊打上你想要的 shortname，然後選個 Category</p>
+<p><img src="/imgs/add-disqus-into-hexo/img2.jpg" alt=""><br>接下來的都不管他，一直下一步到結束，然後選上面的 setting</p>
+<p><img src="/imgs/add-disqus-into-hexo/img3.jpg" alt=""><br>可以看到這裡有寫</p>
+<blockquote>
+<p>Your website shortname is testeeee-1</p>
+</blockquote>
+<p>把他加在你 hexo 的 <code>_config.yml</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Disqus</span></span><br><span class="line"><span class="attr">disqus_shortname:</span> testeeee<span class="bullet">-1</span></span><br></pre></td></tr></table></figure>
+<p>就能開始使用 disqus 提供的評論功能了，這邊是因為有跟別人重複到 shortname，所以他強制加了 <code>-1</code>，如果沒有重複到的話就會是你原本設定的那個 shortname 了。</p>
+
+      
+    </div>
+    
+      <div class="article-toc">
+        <h3>Contents</h3>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#申請帳號"><span class="toc-number">1.</span> <span class="toc-text">申請帳號</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#新增-Site"><span class="toc-number">2.</span> <span class="toc-text">新增 Site</span></a></li></ol>
+      </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disqus/">disqus</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/01/01/do-not-inherit-opacity/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">子元素如何不繼承 CSS 的 opacity 屬性&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Deleav Chou&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+<script>
+  var disqus_shortname = 'deleav';
+  
+  var disqus_url = 'http://deleav.github.io/2017/01/02/add-disqus-into-hexo/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
