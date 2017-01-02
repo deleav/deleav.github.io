@@ -14,7 +14,7 @@
 <meta property="og:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/tree.jpg">
 <meta property="og:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/img1.jpg">
 <meta property="og:image" content="http://deleav.github.io/imgs/do-not-inherit-opacity/img2.jpg">
-<meta property="og:updated_time" content="2017-01-01T15:20:29.000Z">
+<meta property="og:updated_time" content="2017-01-02T13:32:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="子元素如何不繼承 CSS 的 opacity 屬性">
 <meta name="twitter:description">
@@ -105,7 +105,7 @@ ga('send', 'pageview');
 <li><h4 id="實際"><a href="#實際" class="headerlink" title="實際"></a>實際</h4>左邊的 <code>item1</code> 跟底色都變淡了，連陰影效果都跟著掛了。<br><img src="/imgs/do-not-inherit-opacity/img2.jpg" alt="實際"></li>
 </ul>
 <h1 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h1><p>其實很簡單，只要改用這種方式來避免更改到 <code>opacity</code> 屬性，就不會有改不掉的問題。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">background-color: rgb(0, 0, 0, 0.5);</span><br><span class="line">// rgb() 前三個值為 R G B，第四個為透明度</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">background-color: rgba(0, 0, 0, 0.5);</span><br><span class="line">// rgba() 前三個值為 R G B，第四個為透明度</span><br></pre></td></tr></table></figure>
 <p>同理，文字顏色一樣可以這麼做，可惜我還是沒找到能夠複寫父元素的 <code>opacity</code> 的方法，等找到了再來更新。</p>
 
       
